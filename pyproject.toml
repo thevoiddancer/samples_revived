@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "samples-revived"
+version = "0.1.0"
+description = "A revived version of movie sample collection from the website www.sloth.org/samples"
+authors = ["Tomislav Nazifovic <tomislav.nazifovic@gmail.com>"]
+license = "GNU General Public License v3.0"
+readme = "README.md"
+packages = [{include = "samples_revived"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1"
+psycopg2 = "^2.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2"
+black = "^22.12"
+flake8 = "^6.0"
+mypy = "^0"
+isort = "^5.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
